@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeveloperActivity">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Polyglot Messenger"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:id="@+id/version"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:text="Version 2.0.1"
+        android:textColor="@android:color/darker_gray"
+        android:textColorHighlight="@android:color/background_dark"
+        android:textSize="15dp" />
+
+
+    <ImageView
+        android:id="@+id/viewImage_profile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/version"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic"
+        />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© 2019-2020 Polyglot Inc."
+        android:layout_below="@+id/viewImage_profile"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/license"
+        android:layout_below="@+id/copyright"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/license"
+        android:fontFamily="sans-serif-smallcaps"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="#0000EE"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/r"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/license"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Aneesh Madhavan"
+        android:textColor="@android:color/darker_gray"
+        android:textColorHighlight="?android:attr/textColorHighlight"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/a"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Rahul Chauhan"
+        android:textColor="@android:color/darker_gray"
+        android:textColorHighlight="?android:attr/textColorHighlight"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/d"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/a"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Divyanshu Goyal"
+        android:textColor="@android:color/darker_gray"
+        android:textColorHighlight="?android:attr/textColorHighlight"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/v"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/d"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Vineet Agarwal"
+        android:textColor="@android:color/darker_gray"
+        android:textColorHighlight="?android:attr/textColorHighlight"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation"
+        android:background="@color/grey"
+        app:itemBackground="@color/colorPrimaryDark"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_button"
+        android:layout_alignParentBottom="true"
+        tools:ignore="PrivateResource" />
+
+</RelativeLayout>
